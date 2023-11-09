@@ -6,6 +6,7 @@ import UserInfo from "./components/user/userInfo.tsx";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import TanstackQuery from "./provider/tanstack";
 import "./index.css";
+import Gridnih from "./pages/gridnih.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/grid" element={<Gridnih />} />
           <Route path="/user" element={<User />} />
           <Route path="/user/:id" element={<UserInfo />} />
         </Routes>
